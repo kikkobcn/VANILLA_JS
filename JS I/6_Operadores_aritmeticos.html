@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <title></title>
+</head>
+<body>
+<!--OPERADORES ARITMETICOS-->
+    <p id="Ej de suma entre variables"></p>
+    <script>
+    var x= 5;
+    var y = 4;
+    var dosNumeros= 1 +7;
+    var dosVariables = x+y;
+    var numeroVariables= 4 +x;
+
+    var suma = x+y;
+    var resta = x-y;
+    var multiplica= x+y;
+    var divisio = x/y;
+    var modulo = x % y; //Ej.: 23%10 --> 23/10=2,3  el resultado del modulo % es el resto o sea 3
+
+    //document.write(suma, " ", resta, " ", multiplica, " ", divisio, " ", modulo);
+
+// OPERADORES COMPARATIVOS de igualdad
+    var a = 5;       // el valor es numerico (==)
+
+    document.write(a == 10); // false porque se ha definido a =  5 (linea 26) 
+    document.write(a == 5);  // true porque igual a como se ha definido
+    document.write(a == '5');// false porque no es diferente a 5.JS(considera iguales valore y string)
+
+    // OPERADORES COMPARATIVOS de igualdad Estricta(===)
+    document.write(a === '5');//False porque aqui se comapra el valor con el tipo(numero o string) 
+
+// OPERADORES DE DESIGUALDAD (!=)
+    document.write(a != 10); // True: a es diverso de 10 porque a =  5 (linea 26) 
+    document.write(a != 5);  // False porque a se ha definido = 5
+    document.write(a != '5');// True porque no es diferente a 5.JS(considera iguales valor
+
+ // OPERADORES COMPARATIVOS de Desigualdad Estricta(!==)
+    document.write(a !== '5');//True     porque aqui se comapra el valor con el tipo(numero o string)
+
+// OPERADORES COMPARATIVOS de mayor que (>), menor que (<), mayor o igual que (>=), menor o igual que (<=)
+    document.write(a > 10); // False porque a es menor que 10
+    document.write(a < 10); // True porque a es mayor que 10
+    document.write(a >= 10); // True porque a es mayor o igual que 10
+    document.write(a <= 10); // False porque a es menor o igual que 10
+
+// OPERADORES BINARIOS
+var a= 8;
+++a;
+document.write("a es= ", a); // el resultado es 9 porque el ++ significa añadir 1 
+
+var a= 8;
+--a;
+document.write("a es= ", a); // el resultado es 7 porque el --+ significa quitar 1 
+
+
+        </script>
+    
+</body>
+</html>

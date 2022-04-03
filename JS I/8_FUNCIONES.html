@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+//SINTAXIS
+//Function NO Anonima <nombre_funcion>(<parametros separados por comas>){codigo}
+// 1.Funcion sin parametros ()
+    function saludo() {
+        alert("Hola");
+    }
+
+    //LLAMAR A LA FUNCTION: simplemente poner el nombre de la funcion y () 
+    saludo ();
+
+    //Otra manera de llamar a la funcion asignandola a una variable a la que le podremos dar salida
+    var resultadoSaludo = saludo ();
+    //pero nos devolverá un "Undefined" porque hemos definido a una funcion pero sin parametros.
+    alert(resultadoSaludo);
+
+// 2.Funcion con parametros
+function producto(a,b) {
+    return a + b;
+    }
+// con il comando   "producto(3, 4);"   le asignamos los parametros, pero el resultado (3+4=7) no podremos verlo porque no lo hemos asignado a una variable.
+// verlo porque: a)ha ejecutado la funcion, b)ha devuelto un valor pero no habendolo asignado a ninguna 
+//variable no podemos mostrarlo.
+//Definamos por lo tanto una variable a la que asignamos los parametro de la funcion.
+var resultadoProducto = producto(3, 4);
+// para que, con alert, por ejemplo, nos mostrará el resultado 
+alert(resultadoProducto);
+
+</script>
+
+
+    
+</body>
+</html>

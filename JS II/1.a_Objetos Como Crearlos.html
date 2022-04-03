@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <h1>OBJETOS</h1>
+</head>
+<body>
+   <script>
+/*
+OBJETOS CREADOS POR EL USUARIO:
+Para crear y definir objetos podemos utilizar 3 distintas formas:
+
+1. Crear un objeto simple utilizando un literal:											*/
+var coche = {
+		tipo: "Fiat", 
+		modelo: "500",
+		color: "blanco",
+		puertas: 4, 
+		motor: "1.6"};
+/*
+2. Crear un objeto simple utilizando la palabra new:										*/
+var persona = new Object(); 
+persona.nombre = "Juan";
+peronsa.apellido = "Perez";
+persona.edad = 30;
+/*
+3. Crear un objeto Construido definendo un constructor de un objeto:						*/
+function alumno (name, surname, age) {
+	this.nombre = name;						
+	this.apellido = surname;				
+	this.edad = age;
+}	
+var alumno1 = new alumno("Juan", "Perez", 30);
+var alumno2 = new alumno("Maria", "Gonzalez", 25);
+
+	</script>
+    
+
+</body>
+</html>

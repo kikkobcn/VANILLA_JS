@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>  
+    <script>
+        var a =10; var b = 2;
+        //OPERADOR AND --> (&&)       
+        var resultado = (a < 12 && b > 1 ); // true
+        resultado=(a>11 && b<2);  // false
+        document.write(resultado);
+
+        //OPERADOR OR --> (||)
+        var resultado2 = (a < 12 || b > 3 ); // la operacion da true porque se ha verificado una de las otras comparaciones.
+        document.write(resultado2);
+
+        //OPERADOR OR --> (!)
+        var resultado3 = !(a == 12); // true porque a no es igual a 12(se niega el contenido entre parentesis)
+        document.write(resultado2);
+
+        //OPERADOR TERNARIO --> es compuesto de 3 partes:
+        //1. (Condicion)
+        //2. Valor si la condicion es true
+        //3. Valor si la condicion es false
+        var h = 10;
+        var resultado4 = (h == 12) ? "SI h es igual a 12" : "NO h no es igual a 12";
+        //hemos definido h=10, por lo tento la (condicion de h==12) es false, 
+        //por lo que resultado4 es "NO h no es igual a 12"       
+        document.write(resultado4);
+    </script>
+    
+</body>
+</html>

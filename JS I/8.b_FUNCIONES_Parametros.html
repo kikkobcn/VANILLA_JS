@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+    /*PARAMETRO Y AGRUMENTOS:
+        -Una function puede tenre cero o mas parametros;        
+        -Los Parametros son los nombres que aparecen en la definicion de una funcion, no se especifica
+         el tipo, pero si el orden de los parametros, y si es obligatorio o no;
+        -Los Argumentos son los valores que le pasamos, no se verirfican ne en tipo ni en numeros,
+         pero si en el orden de los argumentos;*/
+
+        /*Nº PARAMETROS inferior a los declarados:
+        Cuando llamamos a una funcion con memnos argumentos de los que se han declarado, los que 
+        faltan no estan definidos*/
+        function suma (a, b){
+            return a + b;
+        }
+        
+        var resultado=suma(1);
+        alert(resultado);   //nos da NaN(Not a Number) porque no le hemos pasado el segundo argumento y
+                            // la funcion no sabe como hacerlo.
+                            //Por este motivo tenemos que decirle que hacer en el caso como este.
+                            //Lo hacemos poniendo un condicional if, que si no le hemos pasado el segundo argumento,
+                            //le asignamos un valor por defecto.
+        function sumaUno (c, d){
+            if(d===undefined)  //o sea si b no esta definido,  
+                d=0;           //entonces le asignamos el valor 0.
+        
+            return c + d;
+        }                    
+        var resultado1=sumaUno (1);
+        alert(resultado1);
+
+    //Nº PARAMETROS superior a los declarados:
+        function valores (){
+            document.write("El nº de argumentos es: " + arguments.length + "<br>");
+            for(var i=0; i<arguments.length; i++){
+                document.write("Argumento nº    " + i+ "=" + arguments[i] + "<br>");
+            }
+        }
+        valores (1,2,3,4,5,6,7,8,9,10);     
+        //nos da 10 porque los argumentos que le pasamos son 10, pero la funcion no tiene ningun parametro.
+        //Despues de habernos mostrado el numero tot de los argumentos, le decimos que nos muestre los 
+        //argumentos uno a uno, y lo hacemos con un bucle FOR justo despues de linea 39.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>  
+    <script>
+//JS tiene 2 de variables de tipo que nos permiten comprobar de que tipo son determinadas variables:
+//1. Variables TYPEOF: nos proporciona el tipo de datos de una variable    
+        var cadena = "juan Perez";
+        var numero = 200;
+        var bool = true;
+        var array = [1, 2, 3, 4];
+        var objeto  = {nombre:"Juan", apellido: "Perez"};
+        var fecha = new Date;
+        var miFuncion = function miFuncion () {alert ("hola");};
+        var sinDefinir;
+        var vacia = null;
+
+        document.write(typeof cadena);document.write("<br>"); // Typeof = string
+        document.write(typeof numero);document.write("<br>"); // Typeof = number
+        document.write(typeof bool);document.write("<br>"); // Typeof = boolean
+        document.write(typeof array);document.write("<br>"); // Typeof = object
+        document.write(typeof objeto);document.write("<br>"); // Typeof = object
+        document.write(typeof fecha);document.write("<br>"); // Typeof = object
+        document.write(typeof miFuncion);document.write("<br>"); // Typeof = function
+        document.write(typeof sinDefinir);document.write("<br>"); // Typeof = undefined
+        document.write(typeof vacia);document.write("<br>"); // Typeof = objeto
+        // en lugar del nombres de las varibles, podemos poner el contenido de la variable
+
+//2. Variable INSTANCEOF nos dice si un objeto forma parte de otro
+var animales = ["perro", "gato", "loro"];
+alert (animales instanceof Array); // true animales es un array
+alert (animales instanceof object); // true animales es un objeto
+alert (animales instanceof string); // false animales no es un string
+</script>
+    
+</body>
+</html>

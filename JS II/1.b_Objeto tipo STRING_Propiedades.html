@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <h1>OBJETOS - Tipo STRING -</h1>
+</head>
+<body>
+<script>
+// DEFINICION:
+	var daw = "Desarrollo de Aplicaciones Web";
+	var dam = "Desarrollo de Aplicaciones Multiplataforma";
+	var asir = "Administracion de 'Sistemas informatico' de red";
+	var smr = "Sistemas \"Microinformatricos\" y Redes";	
+	var ciclos = new string(" ");
+
+// CONCATENACION DE CADENAS
+	ciclos += "Hay 3 ciclo de grado superior: \n";
+	ciclos += daw + "," + dam +" "+ "y" + asir+ "\n";
+	ciclos += " y un ciclo de grado medio: "+ "\n";
+	ciclos += smr;
+
+	alert(ciclos);
+/*POR TANTO LA VAR ciclos contiene la siguiente string:
+Hay 3 ciclo de grado superior:
+Desarrollo de Aplicaciones Web, Desarrollo de Aplicaciones Multiplataforma, Administracion de 'Sistemas informatico' de red
+y un ciclo de grado medio:
+Sistemas "Microinformatricos" y Redes 
+*/
+
+// PROPRIEDAD length
+	//<string1>.length: devuelve la longitud de una cadena
+	alert("La longitud de la cadena es: "+ ciclos.length); //devuelve: 222(caracteres tot de ciclos)
+
+
+
+</script>
+    
+
+</body>
+</html>

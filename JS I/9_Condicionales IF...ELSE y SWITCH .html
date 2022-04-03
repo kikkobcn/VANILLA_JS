@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>CONDICIONALES IF...ELSE</h1>
+    <script>
+        var nota = 3;
+        if (nota >= 5) {
+            alert("Aprobado");
+        } else {
+            alert("Has Suspendido");
+        }
+
+/*Ademas de IF...ELSE, podemos usar una condición más compleja, que es IF...ELSE IF...ELSE
+Es decir: si la condición de arriba no se cumple, entonces se ejecuta la condición de abajo,    
+        if (condicion1) {
+            Aqui van las Instrucciones si la condicion1 es True
+        } else if (condicion2) {
+            Aqui van ñas Instrucciones si la condicion1 es Falsa y la condicion2 es verdadera
+        } else {
+            Aqui van las Instrucciones si la condicion1 y la condicion2 son entrambe falsas
+        } */
+        var nota2 = 9;
+        if (nota2 <= 5) {
+            alert("Has suspendido");
+        } else if (nota2 == 5) {
+            alert ("Has sacado un 5");
+        } else if (nota2 == 6) {
+            alert ("Has sacado un 6");
+        } else if (nota2 == 7 || nota2 == 8) {
+            alert ("Has aprobado con buenas notas");
+        } else (alert ("Has sacado un sobresaliente"));
+
+
+/*La instruccion SWITCH corresponde a varios if...else anidados.
+Es decir dependiendo de la "expression/variable"(en SWITCH) se toman las acciones correspondientes 
+a las especificadas en cada CASE:
+SINTAXIS:
+switch (expresión o variable) {
+  case valor1:  //Se ejecuta la accion aqui indicada cuando el resultado de expresión/variable
+                 coincide con el valor1
+    [break;]    y con break; se sale de un bucle
+  case valor2:  //Se ejecuta la accion aqui indicada cuando el resultado de expresión/variable
+                 coincide con el valor2
+    [break;]    y con break; se sale de un bucle
+      ...
+  case valorN:  //Se ejecuta la accion aqui indicada cuando el resultado de expresión/variable
+                 coincide con el valorN
+    [break;]    y con break; se sale de un bucle
+  default:      //Se ejecuta la accion indicada con default cuando ninguno de los valores anteriores
+                coinciden con el valor de la expresión/variable
+}               */
+
+
+			 var nota3 = 3;
+			 var mensaje = "";      //defino una var vacia para que no me de error
+			 switch (nota3){
+			 	case 0: 
+			 	case 1: 
+			 	case 2: 
+			 	case 3: 
+			 	case 4: 
+			 		mensaje = "Suspenso";   //si la nota es menor o igual a 4, se muestra el mensaje
+			 		break;
+			 	case 5: 
+			 		mensaje = "Suficiente"; //si la nota es igual a 5, se muestra el mensaje
+			 		break;	
+			 	case 6: 
+			 		mensaje = "Bien";
+			 		break;
+			 	case 7: 
+			 	case 8: 
+			 		mensaje = "Notable";
+			 		break;
+			 	case 9: 
+			 	case 10: 
+			 		mensaje = "Sobresaliente";
+			 		break;
+			 	default:
+			 		mensaje = "El valor no es válido";
+			 }
+			 alert (mensaje);               //se da salida a la variable mensaje
+
+        </script>
+    
+</body>
+</html>

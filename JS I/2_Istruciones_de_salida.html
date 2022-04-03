@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>    
+    <h1>Instrucciones de salida</h1>
+
+    <!--este ID "titulo2" es el que hace referencia el id del document.getElemetById(linea 21)-->
+    <h2 id="titulo2"></h2>  
+    <p>Parrafo de prueba</p>
+    
+    <script>
+       //Existen 3 instrucciones de salida: 1 alert, 
+       //se puede usar por ej. para indicar operacione matematicas: alert(2+3) y saldrà un 5
+       alert("hello");     //alert forma parte del objeto window de JS y sale un prompt
+
+       // 2 document.getElementById("").innerHTML="", escribe difrectamente en el doc html y se refiere
+       //a un elemento que tiene un ID anteriormente especificado, con INNERHTNL se escribe dentro del elemento ID
+       //se puede usar por ej. para indicar operacione matematicas: alert(2+3) y saldrà un 5
+       document.getElementById("titulo2").innerHTML = "Primeros pasos"
+
+        //3 console.log permite la salida solo en la consola del navegador
+        //se puede usar por ej. para indicar operacione matematicas: alert(2+3) y saldrà un 5
+        console.log("texto para la consola");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/*BREAK Y CONTINUE interrympen la normal ejecucion de un bucle.(FOR, SWITCH, WHILE etc)
+        BREAK permite saltar fuera de un bucle
+        CONTINUE permite saltar a la siguiente iteracion dentro de un bucle*/
+
+    //BREAK
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i==3){
+                break; 
+            }        // si i =3 salta fuera del bucle
+            document.write("i= "+i + "<br>");
+        }
+
+    //CONTINUE
+        var j;
+        for (j=0; j<10; j++) {
+            if (j==3){
+                continue; }        // si j =3 salta la siguiente iteracion, o sea salta cuando
+                                   // j=3 y sigue con el bucle: 5, 6, etc 
+            document.write("j= "+j + "<br>");
+        
+        }
+    </script>
+    
+</body>
+</html>

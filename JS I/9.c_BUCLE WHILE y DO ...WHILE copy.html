@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+/*BUCLE WHILE se ejecuta mientras que se cumpla una condicion.
+        //Viene sobretodo utilizado cuando se solicitan datos a un usuario
+        
+        SINTAXIS:
+        while (<Condicion>) {
+            <CODIGO A EJECUTAR>
+        } */
+        
+        var i=0;
+        while (i<=5) {
+            document.write(i + "<br>");
+            i++;
+        }
+        //El bucle de arriba se ejecuterá siempre porque la variable i ha sido definida =0 pero en
+        //ningun momento se ha incrementado o decrementado, por lo tanto siempre será menor o igual.
+        // a 10.
+        //Por lo tanto ha de indicar,por ejemplo, i++ o i-- para que el bucle se pare cuando
+        //i cumpla con la condicion especificada en while.
+
+        //Viene sobretodo utilizado cuando se solicitan datos a un usuario:
+        //1.Preguntarle al usuario si quiere seguir jugando.
+        //2.hasta que el usuario responda no, el bucle se detendra.
+
+/*DO...WHILE Obligatoriamente siempre se ejecuta al menos una vez.
+        SINTAXIS:
+        do {<CODIGO A EJECUTAR>
+        } while (<Condicion>); */
+
+        var c = 0;
+        do {
+            document.write(c + "<br>");    //se muestra en la pagina web el valor de c hasta 
+            c++;                            //que c sea mayor que 10.
+        } while (c<=10);
+            
+    </script>
+    
+</body>
+</html>

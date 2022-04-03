@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <title>Variables en JS</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+    <p id="parrafo2"></p>
+    <p id="parrafo3"></p>
+    <script>
+        //Declaracion de una variable
+        var nombre;
+        document.getElementById("parrafo1").innerHTML = nombre; //al "parrafo1" le asigno el valor de la variable nombre
+                                                                //que no tiene valor, por lo tanto muestra undefined          
+
+        // asignacion de un valor a una variable
+        nombre = "kiko";
+        document.getElementById("parrafo2").innerHTML = nombre; //Ahora aparece kiko en el parrafo2
+
+        //Declaracion de mas de una variables en una instriccion
+        var nombre="Juan", apellido="Martinez"; // o andando a capo
+        
+        
+        //Asignacion de operaciones a una variable
+        var nombreApellido="Juan"+"Martinez"; //JuanMartinez
+        var edad="23";
+        var nacimiento=1815
+        var muerte= nacimiento+23; //1815+23=1838
+        document.getElementById("parrafo2").innerHTML = nombreApellido+ " nació en "+ nacimiento + 
+        "y falleció en "+muerte;
+
+        
+        </script>
+    
+</body>
+</html>

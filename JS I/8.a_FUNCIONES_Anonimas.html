@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        //Funcion NO anonima: (capitulo anterior)LLEVA un nombre(Ej producto):
+        //function producto(a,b) {return a + b;};
+        
+        //una funcion ANONIMA NO tiene nombre, se define como las no anonimas peró para invocarlas se 
+        //usa el nombre de la variable que la contiene.
+        //Podemos asignarlas a variables, utilizarlas como parámetros de otra función, o llamarlas
+        //automáticamente en el momento que se define, etc.
+        var producto = function (a, b) {return a + b;};  
+        //lo unico que tenemos que hacer es pasarles  los parametros, de manera será posbile visualizar 
+        //el resultado simplemente dando salida a la variable.
+        var resultadoProducto = producto (3, 4);
+        alert(resultadoProducto);
+        
+
+// CONSTRUCTOR FUNCTION()
+//Escribimos la funcion de la linea 15, pero en vez de ponerle un nombre, le ponemos un constructor,
+var miFuncion = new Function("a", "b", "return a + b;");
+//Para llamar a la funcion, la asignamo a una variable y le pasamos los parametros:
+var resultado2 = miFuncion (5,7); 
+document.write(resultado2);
+
+
+//FUNCIONES ANONIMAS AUTOINVOCADAS
+//para ser invocadas utomaticamente hace falta poner al final de la funcion unas () y que ejecute como 
+//una expresio debemos meterla entre ()
+(function () { document.write("Hola"); } ());
+//esta funcion, que anonima, para ser invocada no ha hecho falta ponerle nombre, o asignarla a una
+//variable, y se ha ejecutado sola, luego por supesto, para ver el resultado hemos usado 
+//document.write.........
+    </script>
+</body>
+</html>

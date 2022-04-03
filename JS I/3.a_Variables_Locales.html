@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Variables Locales</h1>
+<script>
+//Se definen dentro de una funcion, y solo se pueden usar dentro de esa funcion.
+//Esto quiere decir que podemos usar variables con el mismo nombre en distintas funciones.
+//Ademas las variables locales desaparecen cuando finaliza la funcion.
+function saludar (){
+    var saludo = "Hola";
+    alert (saludo);
+}
+saludar();
+//alert (saludo);
+// la variable saludo está definbida solo dentro de la funcion, por lo que al invocarla
+//(en la line 14) no se puede acceder a ella.
+//Para que funcione debemos poner el comando "alert" dentro de la funcion, de manera que
+//nos permita ver el resultado aunque se invoque fuera.
+</script>
+
+
+</body>
+</html> 

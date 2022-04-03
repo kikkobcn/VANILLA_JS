@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Variables Globales y Locales con mismo nombre</h1>
+<script>
+//Podemos tener varias variables con el mismo nombre sea dentro que fuera de las funciones.
+//porque las que estan definidas dentro de las funciones solo pueden ser llamardas dentro 
+//de las funciones.
+
+var miVariable = "Fuera";
+function ambito (){
+    var miVariable = "Dentro";
+    alert (miVariable); 
+}
+alert (miVariable);     //Devuelve "Fuera"
+ambito ();              //Devuelve "Dentro"
+alert (miVariable);     //Devuelve "Fuera"
+
+
+//VARIABLES GLOBALES DEFINIDAS DENTRO DE UNA FUNCION
+var miVariable2 = "Fuera";
+function ambito2 (){
+    miVariable2 = "Dentro";
+    alert (miVariable2); 
+}
+alert (miVariable2);     //Devuelve "Fuera"
+ambito2 ();              //Devuelve "Dentro"
+alert (miVariable2);     //Devuelve "Dentro" Como en el ejemplo anterior, hemos salido de la funcion y
+                        //la variable miVariable2 deberia coger el valor de aquella global definida 
+                        //en la linea 24, pero coge el valor de aquella definida dentro de la funcion 
+                        //por el motivo que, a pesar de estar dentro, ha sido definida como global
+                        //(sin el comando var).
+
+
+</script>
+
+
+</body>
+</html> 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <h1>OBJETOS - STRING _ METODO -</h1>
+</head>
+<body>
+<h3 id = "demo"></h3>
+<Script>
+
+var string1 = "El cielo está de color azul y ";
+var string2 = "Leonardo dipinse 'La Gioconda' ";
+var a1 = new String(" ");    //Definicion de una variable tipo string
+a1 = string1 + string2;
+
+//alert(a1);				//El cielo está de color azul y Leonardo dipinse 'La Gioconda' 
+document.getElementById("demo").innerHTML = a1;
+
+/*METODOS:
+//de BUSQUEDA:
+	/* <string1>.charAt(<string2>)
+		En <string1> busca el caracter en el num posicion indicado en <string2>  */
+		//alert("El caracter en la posicion 3 es: "+ a1.charAt(3)); // devuelve: "c"
+		a2 = "El caracter en la posicion 3 es: "+ a1.charAt(3);
+		document.getElementById("demo").innerHTML = a2;
+
+	/* <string1>.charCodeAt(<string2>)
+		En <string1> devuelve el codigo ASCII del caracter en la posicion  <string2>   */ 
+		//alert("El codigo ASCII del caracter en la posicion 2 es: "+ a1.charCodeAt(2)); //devuelve:32
+	
+	/* <string1>.concat(<string2>)
+		devuelve una nueva string con la concatenacion de dos o mas cadenas*/
+		//alert("La cadena a1 + la cadena 'hello' es: "+ a1.concat("hello")); // devuelve: "El cielo está de color azul y Leonardo dipinse 'La Gioconda' hello"
+	
+	/* <string1>.indexOf(<string2>) 
+		En <string1> busca cual es la primera posicion en donde se encuentra el <string2> */
+		//alert("La primera aparicion de la letra i en la string a1 es: "+ a1.indexOf("i")); // devuelve: 4
+
+	/* <string1>.lastIndexOf(<string2>)
+		En <string1> busca cual es la ultima posicion en donde se encuentra el <string2> */
+	//alert("La ultima aparicion de la letra i en la string a1 es: "+ a1.lastIndexOf("i")); //devuelve: 52	
+	
+	/* <string1>.search(<string2>)
+		busca la string <string1> en <string2> */
+	//alert("Busca la string 'color' en la variable string1 " + string1.search("color")); //devuelve: 10
+
+//Busqueda x determinar si una palabra INCLUYE, EMPIEZA o TERMINA con un parametro indicado
+	/* <string1>.includes(<string2>)
+		devuelve true si la cadena <string1> incluye <string2>  */
+	//alert("La cadena srintg1 incluye la string 'cielo'? "+ string1.includes("cielo")); // devuelve: true
+
+	/* <string1>.startsWith(<string2>)
+		devuelve true si la cadena <string1> empieza con <string2> */
+	//alert("La cadena string1 empieza con 'El'? : "+ string1.startsWith("El")); // devuelve: true
+	
+	/* <string1>.endsWith(<string2>)
+		devuelve true si la cadena <string1> termina con <string2> */
+	//alert("La cadena string1 termina con y? "+ string1.endsWith("y ")); // devuelve: true
+
+//match(<expresion>):busca una expresion expresion en otra cadena
+
+//de COMPARACION:
+	/* <string1>.localeCompare(<string2>)
+		devuelve -1 (antes), 0 (igual), 1 (despues) */
+	//alert("Es string1 menor que string2? : "+ string1.localeCompare(string2)); //  devuelve: -1
+
+
+//CONCATENACION Y REPETICION:  	
+	/*	<string1>.concat(<string2>)   Concatena <string1> con <string2>	*/
+	//alert("Concatena string1 con string2: "+ string1.concat(string2)); // devuelve: "El cielo está de color azul y Leonardo dipinse 'La Gioconda' "
+
+	/* <string1>.repeat(<numero>)
+		Repite <string1> <numero> veces */
+	//alert("Repite a 3 veces= "+ string1.repeat(3)); // devuelve: "El cielo está de color azul y El cielo está de color azul y El cielo está de color azul "
+
+//EXTRACCION:
+	/* <string1>.slice(<inicio>, <fin>)
+		Desde <string1> extrae los caracteres comprendidos entre <inicio> hasta <fin> 
+		Para extraer todos los caracteres a partir de <inicio> hasta el final basta con no
+		indicar <fin>*/
+	//alert("Los carcateres desde el 1º hasta el 5º de a son= "+ string1.slice(0,5));  //Devuelve "El cielo"
+	//alert("Los caract desde la posicion 6 hasta el final de a son= "+ string1.slice(6)); //Devuelve "lo está de color azul "
+
+	/* <string1>.substring(<inicio>, <numero de caracteres>)
+		Desde <string1> extrae <numero de caracteres> empezando por <inicio>
+		Para extraer todos los caracteres a partir de <inicio> hasta el final basta con no
+		indicar <fin>*/
+	//alert("la string de 6 caracteres que hay empezando por el 2ª caract. es? "+ string2.substring(2,6));  // devuelve: "Leonardo"
+
+	/* <string1>.split(<caract separador>)
+		Divide una string en un array de string separadas por el caracter indicado en 
+		<caract separador> */
+	//alert("La string2 separada por espacios es: "+ string2.split(" ")); // devuelve: ["Leonardo", "dipinse", "'La Gioconda'"]
+	
+	
+//MINUSCULAS Y MAIUSCULAS
+	/*	<string>.toLowerCase():devuelve todo en minuscula*/
+	alert(string1.toLowerCase());
+	
+	/*	<string>.toUpperCase():devuelve todo en maiuscula*/
+	alert(string1.toUpperCase());
+
+//METODOS ESPECIALES
+	/*	<string>.tostring():devuelve string1 como una stringa ded caracteres*/
+	alert("5".toString());
+
+	/*	<string>.valueOf():devuelve el valor de string1 como una stringa ded caracteres*/
+	alert("Hello".valueOf());
+
+
+ 
+</script>
+    
+
+</body>
+</html>

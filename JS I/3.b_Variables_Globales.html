@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Variables Globales</h1>
+<script>
+//Se definen fuera de las finciones, se pueden usar en todo el programa.
+//Son accesibles desde fuera y dentro de las funciones.
+//Ademas las variables locales desaparecen cuando finaliza el programa.
+var despedida = "Adios";
+function despedir (){
+    alert (despedida);
+}
+despedir ();
+
+//Podemos referirnos a la variable despedida tambien fuera de la funcion:
+alert (despedida); 
+
+//Si declaramos una variable que no haya sido declarada anteriormente(es decir sin el comando var),
+//automaticamente se convierte en una variable global.
+function preguntar (){
+    pregunta = "¿Qué tal?"; //aqui "pregunta" no ha sido declarada como variable(falta "var")
+}                            //Por lo tanto se convierte en globasl y se puede referirse a ella
+                            //desde cualquier parte del programa.
+preguntar ();
+alert (pregunta);
+</script>
+
+
+</body>
+</html> 

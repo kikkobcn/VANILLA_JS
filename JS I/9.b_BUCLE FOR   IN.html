@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        /*BUCLE FOR   IN permite un bucle dengtro de un array o un objeto.
+        
+        SINTAXIS:
+        for (<Dato en el Array u objeto>  in  <Nombre Array u objeto>) {
+            <CODIGO A EJECUTAR>
+        } */
+        
+        // Definamos una variable amigos que corresponde a un array / objeto
+        var amigos = {nombre:"Juan", apellido:"Perez", Edad:25, nacimiento:1970};  
+        var a;                  //defino la variable a para luego contenga los vsalores de amigos 
+
+        for (a in amigos) {
+            alert(amigos[a]);   //recorro cada valor del array, lo pongo en la variable a, 
+                                //anteriormente definida, y lo muestro en pantalla                        //la m uestro en pantalla.
+        }
+
+    </script>
+    
+</body>
+</html>

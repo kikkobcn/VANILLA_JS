@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <script>
+        /*SINTAXIS:
+        for (<1º INICIALIZACION>; <2º CONDICION>; <3º INCREMENTO>) {
+            <CODIGO A EJECUTAR>
+        }
+        1º INICIALIZACION:se ejecuta una vez antes de comenzar el bucle
+        2º CONDICION: se ejecuta antes de cada fase de bucle
+        3º INCREMENTO: se ejecuta despues de cada fase de bucle
+        */
+        
+        var i;                              //declaro la variable i.
+        for (i = 0; i <=10; i++) {          //inicializo i a 0, y mientras que i sea menor que 10, 
+                                            //incremento i en 1
+            document.write(i + "<br>");     //muestro el valor de i en la pagina web
+        }
+
+        //VARIACIONES DE FOR:
+        //1.Si declaro la variable fuera del for, va dejado en bmanco <INICIALIZACION>
+        var j=2;
+        for (  ; j <=10; j++){
+            document.write(j + "<br>");
+        }
+
+        //2.Si omitimos <CONDICION>, el bucle se ejecuta siempre, por tanto dentro de 
+        //<CODIGO A EJECUTAR> debemos poner un BREAK para que salga del bucle
+        var k;
+        for (k=1;  ; k++){
+            document.write(k + "<br>");
+            if (k==5){
+                break;
+            }
+        }
+
+        //3.Si omitimos <INCREMENTO>, debemos incrementar o decrementar la vasriable dentro 
+        //del bucle.
+        var m;
+        for (m=1; m <=5 ;   ){
+            alert(m + "<br>");
+            m++;
+        }
+            
+        //4.Trabajar con dos o mas variables dentro del bucle.
+        
+        var p, r;
+        for (p=1, r=10; p <=5 , r >=1; p++, r--){
+            alert(p + " " + r + "<br>");
+        }
+            
+            
+    </script>
+    
+</body>
+</html>
