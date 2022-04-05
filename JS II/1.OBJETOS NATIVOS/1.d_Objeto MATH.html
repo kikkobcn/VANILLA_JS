@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <h1>OBJETOS - MATH -</h1>
+</head>
+<body>
+<script>
+/* Permite realizar operaciones matematicas
+no se usa la sintaxis var x = new Math();
+se uas de esta forma:
+var pi = Math.PI;     var raiz = Math.sqrt(36):*/
+
+//PROPIEDADES:
+			// E, LN2, LN10, LOG2E, LOG10E, PI, SQRT1_2, SQRT2
+			var pi = Math.PI;
+			alert ("El número PI vale: "+pi);
+
+//MÉTODOS MÁS COMUNES:
+	//random(): Devuelve un número aleatorio entre 0 y 1
+		alert ("Número aleatorio: "+Math.random());
+
+	//max(<lista de valores>) // min (<lista de valores>)
+		alert ("Máximo de valores: "+Math.max(1,5,3,9,6));		// devuelve 9
+		alert ("Mínimo de valores: "+Math.min(1,5,3,9,6));		// devuelve 1
+
+	//round(<número>): redondeo al alza o a la baja
+		var a = 4.3;											//devuelve 4
+		var b = 4.7;											//devuelve 5
+		var c = 4.5;											//devuelve 5
+		alert ("Redondeo de "+c+" es: "+Math.round(c));
+
+	//ceil(<número>): redondea siempre al alza:
+		alert ("Redondeo de "+a+" es: "+Math.ceil(a));			//devuelve 5
+
+	//floor(<número>): redondea siempre a la baja:
+		alert ("Redondeo de "+b+" es: "+Math.floor(b));			//devuelve 4
+
+	//Número aleatorio entre 0 y 10:
+		var aleatorio = Math.floor(Math.random()*11);					
+		alert ("Aleatorio es: "+aleatorio); 
+
+	//pow(<base>,<exponente>): devuelve el valor de la potencia
+		alert ("La potencia de 3 al cuadrado es: "+Math.pow(3,2));	//devuelve 9
+
+	//sqrt(<numero>): devuelve la raíz del número:
+		alert("Raíz de 36 es: "+Math.sqrt(36));						//devuelve 6
+
+	//abs(<número>): devuelve el valor absoluto de un número
+		alert ("Valor absoluto de -5: "+Math.abs(-5));				//devuelve 5
+
+	//Métodos trigonmétricos:
+	//sin, cos, tan, asin, acos, atan, atan2
+
+
+</script>
+    
+
+</body>
+</html>

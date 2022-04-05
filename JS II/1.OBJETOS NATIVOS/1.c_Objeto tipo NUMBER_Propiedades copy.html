@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <h1>OBJETOS - Tipo NUMBER -</h1>
+</head>
+<body>
+<script>
+// NUMEROS:
+	var entero = 433;
+	var decimal = 43.665;
+	var cientifica = 12e-5; //seria 12*10 elevado a -5 = 0.000012
+	var cientifica1= 12e5; //seria 12*10 elevado a 5   = 1200000
+	var hexadecimal = 0xFF; //seria 255
+
+/*CAMBIO BASE ENTRE NUMEROS: <numero>.toString();
+//cambiar de base entre números: pasar a binario, octal o hexadecimal.
+	var basez=123;
+	alert (basez +" en base binario 2 es: " + basez.toString(2));
+	alert (basez +" en base octal 8 es: " + basez.toString(8));
+	alert (basez +" en base Hexadecima 16 es: " + basez.toString(16));*/
+
+/*INFINITY y -INFINITYx (en programaciona no existe un numero infinito como tal, 
+//sino que es el num mas grande que se pueda almacenar por ejemplo en una variable)
+	var infin = 2;
+	while (infin != Infinity ){
+			alert (infin);
+			infin = infin*infin;
+	}    
+
+	var div1 = 2; var div2 = 0;
+	alert("Division entre 0: " + div1/div2);		//devuelve Infinity
+	alert("Division entre 0: " + (div1*-1)/div2);   //devuelve -Infinity	
+	alert("Typeof: " + (div1/div2));
+	alert("Typeof: " + (div1*-1/div2));
+
+// NaN : Not a Number
+	var atipico = 100/"casa";
+	var atipic1 = 100/"5";
+	alert("100/casa :" + atipico);
+	alert("100/5 :" + atipic1);
+	alert("atipic1 Es un NaN ?" + isNaN(atipic1));
+	alert("De que tipo es NaN ?" + typeof(atipic1));   
+	
+// NUMERO COMO OBJETOS
+var num = 123;
+var num2 = new Number(123);
+alert("num es: " + typeof(num));	//devuelve: number
+alert("num2 es: " + typeof(num2)); //devuelve object  
+
+//PROPIEDADES:
+var maximo = Number.MAX_VALUE; alert("Maximo="+maximo);       //valor maximo que puede existir en JS
+var minimo = Number.MIN_VALUE; alert("Mínimo="+minimo);       //valor minimo que puede existir en JS
+var neginf = Number.NEGATIVE_INFINITY; alert("-Inf="+neginf);
+var posinf = Number.POSITIVE_INFINITY; alert("+Inf="+posinf);
+var numnan = Number.NaN; alert ("NaN="+numnan);                        */
+
+//MÉTODOS:
+			//toFixed(<num decimales>): cadena con el número específico de decimales indicado:
+			var x = 9.8765;
+			alert (x.toFixed(0));         	//devuelve 9 sin decimales
+			alert (x.toFixed(2));			//devuelve 9.87 con 2 devimales
+			alert (x.toFixed(6));			//devuelve 9.876500 con 6 decimales
+
+			//toPrecision(<num cifras>): cadena con el número específico de cifras indicado:
+			var y = 9.8765;
+			alert (y.toPrecision());		//devuelve 9.8765 tal como indicado en la var
+			alert (y.toPrecision(2));		//devuelve 9.9   (2 cifras)
+			alert (y.toPrecision(6));		//devuelve 9.876500   (6 cifras)
+ 
+			//toExponential: cadena con el número redondeado a notación científica.
+			var z = 123456789;
+			alert (z.toExponential(2));		//devuelve 1.23e+8 num esp con 2 decimales
+
+			//valueOf: devuelve el valor primitivo de un objeto.
+			//toString: devuelve la cadena de un número.
+			var j = 123;
+			alert(j.toString());			//devuelve 123
+			alert((123).toString());		//devuelve 123
+			alert((123+7).toString());		//devuelve 130
+
+			//MÉTODOS GLOBALES PARA CONVERTIR VARIABLES EN NÚMEROS:
+			//Number(): devuelve el valor numérico de una variable:
+			alert (Number(true)); // Devuelve 1
+			alert (Number(false)); // Devuelve 0
+			alert (Number(new Date())); // Devuelve el número de milisegundos desde el día 1/1/1970
+			alert (Number("10")); // Devuelve el número de la cadena
+			alert (Number("casa")); // Devuelve NaN
+
+			//parseInt() / parseFloat():Analizan una cadena y devuelven un número.
+			alert (parseInt("10.6")); //Devuelve el número 10	
+			alert(parseInt("10 20")); //Devuelve el primer número 10
+			alert(parseInt("10 casa")); //Devuelve el primer número 10
+			alert(parseInt("casa 10")); //Devuelve NaN
+
+			alert (parseFloat("10.6")); //Devuelve el número 10	
+			alert(parseFloat("10 20")); //Devuelve el primer número 10
+			alert(parseFloat("10 casa")); //Devuelve el primer número 10
+			alert(parseFloat("casa 10")); //Devuelve NaN
+</script>
+    
+
+</body>
+</html>
